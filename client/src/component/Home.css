@@ -1,0 +1,157 @@
+/* Global Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Hide Scrollbar for all elements */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Form Label Styling */
+.label-home {
+  padding: 0.5em;
+  font-size: 1rem;
+  color: #2c3e50;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* Input Field Styling */
+.input-home {
+  margin-top: 0.5em;
+  padding: 0.8em 1em;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 1px solid #ccd1d9;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #34495e;
+  background-color: #f8f9fa;
+  font-family: 'Helvetica Neue', sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Input Focus State */
+.input-home:focus {
+  border-color: #8e2de2;
+  box-shadow: 0 0 5px rgba(142, 45, 226, 0.3);
+  outline: none;
+}
+
+/* Container Styling */
+.container-main {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 2em;
+  margin: 1em auto;
+  max-width: 1000px;
+  min-width: 600px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  /* Horizontally centers child elements */
+  align-items: center;
+  /* Vertically centers child elements */
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Section Titles */
+h3 {
+  font-size: 1.25rem;
+  color: #8e2de2;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+/* Buttons */
+button {
+  padding: 0.7em 1.5em;
+  margin: 1em 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a00e0;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #8e2de2;
+  box-shadow: 0 4px 12px rgba(142, 45, 226, 0.2);
+}
+
+/* Error Message Styling */
+span {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Centered Items */
+.container-item.center-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+/* Info and Attention Styling */
+.container-item.info {
+  background-color: #f4f6f7;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em auto;
+  text-align: center;
+  color: #34495e;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  /* Increased width to give it more space */
+}
+
+.container-item.attention {
+  background-color: #fdecea;
+  color: #c0392b;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em auto;
+  /* Center alignment fix */
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  /* Optional: match width of .info */
+}
+
+/* Admin Section Styling */
+.about-admin,
+.about-election {
+  margin-top: 1em;
+  padding: 1.5em;
+  background-color: #f7f7ff;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}

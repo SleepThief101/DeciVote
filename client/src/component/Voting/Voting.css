@@ -1,0 +1,113 @@
+/* Headings */
+h2,
+h3 {
+  padding: 10px 5px;
+  margin: auto;
+  text-align: left;
+  color: #4a4a4a;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Small Text */
+small {
+  color: #7d7d7d;
+  font-size: medium;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Paragraph Text */
+p {
+  margin: 2px;
+  padding: 4px;
+  color: #555555;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Contact Information Styling */
+.contact {
+  color: #a1a1a1;
+  font-style: italic;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Slogan Styling */
+.slogan {
+  color: #f39c12;
+  font-size: 1.6em;
+  margin: 10px 0;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+}
+
+/* Description Styling */
+.discription {
+  padding: 12px;
+  padding-left: 2px;
+  text-align: justify;
+  max-height: 111px;
+  overflow: auto;
+  line-height: 1.6em;
+  color: #333;
+  background-color: #fafafa;
+  border-left: 4px solid #4a00e0;
+  border-radius: 8px;
+}
+
+/* Candidate Information Box */
+.candidate-info {
+  transition: all 0.5s ease;
+  width: 91%;
+  float: left;
+  margin-left: 1%;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Vote Button Container */
+.vote-btn-container {
+  transition: all 0.5s ease;
+  height: 100%;
+  width: 17%;
+  float: right;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Vote Button */
+.vote-bth {
+  width: 100%;
+  height: 55px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4a00e0;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+}
+
+.vote-bth:hover {
+  background-color: #8e2de2;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styling */
+@media all and (max-width: 900px) {
+  .candidate-info,
+  .vote-btn-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+}
